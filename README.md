@@ -6,7 +6,7 @@ The **Online Book Shop** is a **console-based Java application** that allows cus
 
  Features
 
--  **Customer Registration**
+-  *Customer Registration*
 -  **Customer Login**
 -  **View Available Books**
 - **Place Book Orders**
