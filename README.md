@@ -84,31 +84,8 @@ CREATE TABLE orders (
 
 Structure:
 
-Online-BookShop/
-├── pom.xml
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/
-│   │   │       └── bookshop/
-│   │   │           ├── Main.java
-│   │   │           ├── dao/
-│   │   │           │   ├── BookDAO.java
-│   │   │           │   ├── CustomerDAO.java
-│   │   │           │   ├── OrderDAO.java
-│   │   │           ├── model/
-│   │   │           │   ├── Book.java
-│   │   │           │   ├── Customer.java
-│   │   │           │   ├── Order.java
-│   │   │           │   ├── OrderDetails.java
-│   │   │           ├── util/
-│   │   │               ├── DBConnection.java
-│   │   │               ├── DBUtil.java
-│   ├── resources/
-│   ├── test/
-│   │   ├── java/
-│   │   ├── resources/
-├── target/
+<img width="417" height="627" alt="image" src="https://github.com/user-attachments/assets/882d2d57-4c7e-4f87-b5df-26a7c1c154d6" />
+
 
 
 Use the consol menue to:
