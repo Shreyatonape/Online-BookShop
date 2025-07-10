@@ -28,9 +28,34 @@ The **Online Book Shop** is a **console-based Java application** that allows cus
 
 ---
 
+
+Prerequisites
+Before running the project, ensure you have the following installed:
+
+Java Development Kit (JDK) 17 or higher.
+Apache Maven 3.8.6 or higher.
+PostgreSQL 15 or higher.
+create PostgreSQL database with the following table:
+CREATE TABLE employees (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    age INT NOT NULL,
+    department VARCHAR(100) NOT NULL,
+    salary DECIMAL(10, 2) NOT NULL
+);
+
+
+Maven Dependencies
+
+<dependency>
+    <groupId>org.postgresql</groupId>
+    <artifactId>postgresql</artifactId>
+    <version>42.6.0</version>
+</dependency>
+
+
  Database Schema (PostgreSQL)
 
-Make sure you create the following tables in your PostgreSQL database:
 
 
 CREATE TABLE customers (
@@ -56,9 +81,37 @@ CREATE TABLE orders (
     order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+
+Structure:
+
+Online-BookShop/
+├── pom.xml
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── bookshop/
+│   │   │           ├── Main.java
+│   │   │           ├── dao/
+│   │   │           │   ├── BookDAO.java
+│   │   │           │   ├── CustomerDAO.java
+│   │   │           │   ├── OrderDAO.java
+│   │   │           ├── model/
+│   │   │           │   ├── Book.java
+│   │   │           │   ├── Customer.java
+│   │   │           │   ├── Order.java
+│   │   │           │   ├── OrderDetails.java
+│   │   │           ├── util/
+│   │   │               ├── DBConnection.java
+│   │   │               ├── DBUtil.java
+│   ├── resources/
+│   ├── test/
+│   │   ├── java/
+│   │   ├── resources/
+├── target/
+
+
 Use the consol menue to:
-
-
 
 ![Screenshot 2025-07-10 103406](https://github.com/user-attachments/assets/dc99f08b-041f-440e-b1ba-373ed0708b21)
 
